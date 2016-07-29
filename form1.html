@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>Test Input</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function hello (form)  {
+	alert ("Hello " + form.fname.value + " " + form.lname.value + ", how are you?");
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<fieldset>
+<Legend>Name Form</Legend>
+<FORM NAME="myform" ACTION="" METHOD="GET">
+<INPUT TYPE+"text" NAME="fname" VALUE="First Name">
+<INPUT TYPE="text" NAME="lname" VALUE="Last Name">
+<INPUT TYPE="button" NAME="button" VALUE="Submit" onClick="hello(this.form)">
+
+<label>
+  <input type="reset" name="clear" id="clear" value="Clear">
+</label>
+</FORM>
+</fieldset>
+</BODY>
+</HTML>

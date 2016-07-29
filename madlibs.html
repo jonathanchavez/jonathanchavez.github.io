@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Mad Libs</title>
+<SCRIPT LANGUAGE = "JavaScript">
+
+function makeLibs() {
+story ="<HEAD><TITLE>Title</TITLE></HEAD>" + "<BODY BGCOLOR = '#EEEEEE'><FONT SIZE = 4>Mad Lib</FONT><P>" + "If you go to somewhere like Yellowstone National park you must know how to deal with the wild animals such as bears and wolves and " + document.madlibs.pluralnoun1.value + ". The most important of these is the bear. There are three kinds of bears, the grizzly bear, the " + document.madlibs.adjective1.value + " bear, and the " + document.madlibs.adjective2.value + " bear. Bears spend most of their time " + document.madlibs.verbing.value + " or " + document.madlibs.verbending2.value + ". They look very " + document.madlibs.adjective3.value + ", but if you make them " + document.madlibs.adjective4.value + ", they might bite your " + document.madlibs.noun1.value + ". They will stand on thier hind legs and clap thier " + document.madlibs.body1.value + " together and pretend to be " + document.madlibs.adjective5.value + ". But do not get out of your " + document.madlibs.vechile.value + " or offer the bears " + document.madlibs.food.value + ". This same advice applies to other wild creatures such as " + document.madlibs.alive.value + " and " + document.madlibs.alive2.value + ". ";  
+libsWin = window.open("","",",width=400,height=300,scrollbars=yes");
+libsWin.document.write(story);
+libsWin.document.close();
+}
+</SCRIPT>
+
+
+
+
+
+
+</head>
+
+<body>
+
+<fieldset>
+  <legend>Mad Libs</legend>
+  <form id="madlibs" name="madlibs" method="post" action="">
+    <p>
+     <TABLE BORDER = 0>
+     <tr>
+    
+    <td>Plural Noun</td><td> <input type="text" name="pluralnoun1" id="pluralnoun1"/></td></tr>
+    <tr>
+     <td>Adjective:</td><td> <input type="text" name="adjective1" id="adjective1"/></td></tr>
+    <tr>
+     <td>Adjective:</td><td> <input type="text" name="adjective2" id="adjective2"/></td></tr>
+  <tr>
+      <td>Verb Ending in ING:</td><td><input type="text" name="verbing" id="verbing" /></td></tr>
+    <tr>
+      <td>Verb Ending in ING:</td><td><input type="text" name="verbending2" id="verbending2"/></td></tr>
+    <tr>
+      <td>Adjective:</td><td><input type="text" name="adjective3" id="adjective3"/></td></tr>
+  <tr>
+      <td>Adjective:</td><td><input type="text" name="adjective4" id="adjective4" /></td></tr>
+   <tr>
+      <td>Noun:</td><td><input type="text" name="noun1" id="noun1"/></td></tr>
+    <tr>
+      <td>Part of the Body(plural)</td><td><input type="text" name="body1" id="body1" /></td></tr>
+    <tr>
+      <td>Adjective:</td><td><input type="text" name="adjective5" id="adjective5"/></td></tr>
+    <tr>
+      <td>Vehicle</td><td><input type="text" name="vechile" id="vechile" /></td></tr>
+    <tr>
+      <td>Food:</td><td><input type="text" name="food" id="food" /></td></tr>
+    <tr>
+      <td>Something Alive</td><td><input type="text" name="alive" id="alive" /></td></tr>
+   <tr>
+      <td>Something Alive</td><td><input type="text" name="alive2" id="alive2" /></td></tr>
+   </TABLE>
+    </p>
+    <p>
+      <input type="BUTTON" name="Submit" id="Submit" value="Submit" onClick="makeLibs()">
+      <input type="reset" name="Clear" id="Clear" value="Clear" />
+    </p>
+  </form>
+</fieldset>
+
+
+</body>
+</html>
